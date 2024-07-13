@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #aca7a7;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center container horizontally */
+    align-items: center;
+    margin: 20px;
+}
+
+.image {
+    max-width: 250px;
+    margin-right: 80px;
+}
+
+.description {
+    max-width: 600px;
+    text-align: justify; /* Justify text alignment */
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    line-height: 1.6; /* Improve readability */
+    font-size: 16px; /* Set a comfortable font size */
+    color: #333; /* Dark text color for contrast */
+}
+
+.description h2 {
+    margin: 0 0 15px; /* Space below the heading */
+    text-align: center; /* Center the heading text */
+    font-size: 24px; /* Larger font size for heading */
+    color: #555; /* Slightly lighter color for heading */
+}
+
+.description p {
+    margin: 0 0 10px; /* Space between paragraphs */
+    text-align: justify; /* Justify text alignment */
+}
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0; /* Space between links */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: center; /* Center items in column layout */
+    }
+
+    .image {
+        margin-right: 0; /* Remove right margin in column layout */
+        margin-bottom: 20px; /* Add bottom margin to separate elements */
+    }
+
+    .description {
+        text-align: center; /* Center text on smaller screens */
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+}
